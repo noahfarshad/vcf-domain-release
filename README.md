@@ -2,6 +2,9 @@
 
 When a workload domain says it is already on the target, and the plan buttons are dead, read `isCustomizedBom` before you read the screen.
 
+License: GPL-3.0. Built and proved out for [essential.coach](https://essential.coach).
+Full write-up: [The VCF Workload Domain That Said It Was Already Upgraded](https://essential.coach/vcf-customized-bom-blocks-workload-domain-upgrade/)
+
 `GET /v1/releases/domains/{id}` returns that field. The domain version is the floor of the component versions. A customized BOM can pin HOST and VCENTER to the builds they already have while NSX has moved on. `PATCH /v1/releases/domains/{id}` with a `targetVersion` is the write that clears it. The 9.1.1 set those patches should agree with is the [VCF 9.1.1 Bill of Materials](https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-1/release-notes/vmware-cloud-foundation-9-1-1-0-release-notes/vmware-cloud-foundation-9-1-1-0-bill-of-material.html).
 
 ## Run
