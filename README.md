@@ -10,7 +10,7 @@ Full write-up: [The VCF Workload Domain That Said It Was Already Upgraded](https
 ## Run
 
 ```bash
-export SDDC_URL=https://sddc.example.com
+export SDDC_URL=https://sddc.essential.coach
 export SDDC_TOKEN=...   # a bearer token you already have; this script does not collect one
 python3 domain_release.py list
 python3 domain_release.py show DOMAIN_ID
